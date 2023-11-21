@@ -31,8 +31,7 @@ namespace PersonaEntry.Controllers
         [HttpPost]
         public IActionResult PostPersonInfo(Person person)
         {
-            // Save the person data or do whatever you need
-            // Redirect to a new page (PersonAdded) with the submitted data
+            // Redirect to 'PersonAdded' page with the submitted data
             return RedirectToAction("PersonAdded", person);
         }
 
