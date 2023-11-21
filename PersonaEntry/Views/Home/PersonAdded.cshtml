@@ -1,0 +1,21 @@
+﻿@model PersonaEntry.Models.Person
+@{
+}
+
+<style>
+    .label {
+        font-weight: bold;
+        margin-right: 5px;
+        display: inline-block;
+        width: 160px;
+    }
+</style>
+
+<h2>Person Added</h2>
+<p><span class="label">First Name:</span> @Model.FirstName</p>
+<p><span class="label">Last Name:</span> @Model.LastName</p>
+<p><span class="label">Date of Birth:</span> @Model.DateOfBirth.ToShortDateString()</p>
+<p><span class="label">Address:</span> @Model.Address</p>
+<p><span class="label">City:</span> @Model.City</p>
+<p><span class="label">Country:</span> @Model.Country</p>
+<p><span class="label">Province:</span> @Model.Province</p>
